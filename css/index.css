@@ -1,0 +1,905 @@
+/*
+* @Author: Dell
+* @Date:   2018-01-08 09:51:35
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-01-11 17:44:50
+*/
+@font-face {
+  font-family: 'iconfont';  /* project id 524961 */
+  src: url('http://at.alicdn.com/t/font_524961_apw5yy0xw4qp8pvi.eot');
+  src: url('http://at.alicdn.com/t/font_524961_apw5yy0xw4qp8pvi.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_524961_apw5yy0xw4qp8pvi.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_524961_apw5yy0xw4qp8pvi.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_524961_apw5yy0xw4qp8pvi.svg#iconfont') format('svg');
+}
+
+.iconfont{
+	 font-family: 'iconfont';
+	 font-style: normal;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	height: 40px;
+	background: #444;
+}
+
+.main{
+	height: 40px;
+	/* background: pink; */
+	margin: 0 auto;
+}
+span{
+    width: 60px;
+    height: 100%;
+   /*  background: red; */
+    float: right;
+    font-size: 12px;
+    color: #fff;
+    line-height: 40px;
+}
+
+
+
+
+/* 大于1024 */
+@media screen and (min-width:1024px){
+	header .main{
+		width: 976px;
+	}
+}
+/* 小于1024 */
+
+@media screen and (max-width:1024px){
+	header .main{
+		padding: 0  16px;
+	}
+}
+nav{
+	width: 100%;
+	height: 44px;
+	background: #323232;
+}
+nav ul{
+	/* width: 976px; */
+	height:44px;
+	/* background: red; */
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul li{
+	list-style: none;
+}
+nav ul li a{
+	font-size: 12px;
+	color: #fff;
+	line-height: 44px;
+	text-decoration: none;
+}
+.max-nav ul li a:hover{
+    color: #5b5a5a;
+}
+.min-nav ul li a:hover{
+    color: #5b5a5a;
+}
+.zhongjian{
+	width: 100%;
+	height: auto;
+	/* background: red; */
+	overflow: hidden;
+}
+.zj-text{
+    width: 100%;
+    height: 580px;
+    background: #fafafa;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.zj-text a{
+	text-decoration: none;
+}
+.zj-text1{
+    width: 100%;
+    height: 580px;
+    background: #f9f0eb;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.zj-text1 a{
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+/* 大于1024 */
+@media screen and (min-width:1024px){
+	.max-nav{
+		display: block;
+	}
+	.min-nav{
+		display: none;
+	}
+	nav ul{
+		width: 976px;
+	}
+	.xiabian1{
+		display: block;
+	}
+	.xiabian2{
+		display: none;
+	}
+	.max-footer{
+		display: block;
+	}
+	.min-footer{
+		display: none;
+	}
+	
+.zj-text a h1{
+	font-size: 40px;
+	color: #333;
+    text-align: center;
+    line-height: 63px;
+    margin-top: 100px;
+}
+.zj-text a h2{
+	font-size: 21px; 
+	color: #333;
+    text-align: center;
+    line-height: 44px;   
+}
+.zj-text a div{
+	width: 909px;
+	height: 194px;
+	background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 110px;
+    background: url('../img/iphone_x_large.jpg') no-repeat center center;
+}
+.zj-text1 a h1{
+	font-size: 42px;
+	color: #333;
+    text-align: center;
+    line-height: 63px;
+    margin-top: 55px;
+}
+.zj-text1 a h2{
+	font-size: 21px;
+	color: #333;
+    text-align: center;
+    line-height: 42px;   
+}
+.zj-text1 a div{
+	width: 561px;
+	height: 395px;
+	background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    background: url('../img/iphone_8_large.jpg') no-repeat center center;
+}
+
+/* 六个 */
+.six-box li{
+	width: 50%;
+	height: 580px;
+	background: #fafafa;
+	float: left;
+	list-style: none;
+	border-bottom: 12px solid #fff;
+	border-right: 12px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.six-box li:nth-child(2n+1){
+	border-left: 12px solid #fff;
+}
+.six-box li a{
+	text-decoration: none;
+}
+.six-box li h1{
+	font-size: 30px;
+	color: #333;
+    line-height: 48px;
+	margin-top: 60px;
+	text-align: center;	
+}
+.six-box li h2{
+	font-size: 18px;
+	color: #333;
+	line-height: 34px;
+	text-align: center;	
+}
+.six-box li div{
+	width: 385px;
+	height: 304px;
+	background: red;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+    position: absolute;
+    bottom: 75px;
+    background: url('../img/airpods_large.jpg')
+}
+/* 下边 */
+.xiabian1{
+	width: 100%;
+	height: auto;
+    background: #fafafa;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+.list{
+	width: 976px;
+	height: 300px;
+	/* background: yellow; */
+    margin: 0 auto;
+    border-top: 25px solid #fafafa;
+
+}
+.list li{
+	width: 20%;
+	height: 300px;
+	/* background: pink; */
+	float: left;
+	list-style: none;
+}
+.list li a{
+	text-decoration: none;
+}
+.list li h1{
+	width: 100%;
+	height: 30px;
+	font-size:10px;
+	font-weight: normal;
+	color: #785578; 
+	line-height: 30px;
+}
+.list li h1:first-child{
+	color: #333333;
+}
+
+/* 底 */
+.max-footer{
+	width: 100%;
+	height: auto;
+	background: #fafafa;
+	float: left;
+}
+.max-footer .main{
+	width: 976px;
+	height: 91px;
+	/* background: red; */
+	margin: 0 auto;
+	border-top: 30px solid #fafafa;
+	border-bottom: 30px solid #fafafa;
+}
+.main-top{
+	width: 100%;
+	height: 30px;
+	/* background: yellow; */
+	border-bottom: 1px solid #D6D6D6;
+}
+.main-top .text1{
+	width: 112px;
+	height: 30px;
+	/* background: blue; */
+	font-size: 10px;
+	color: #888888;
+    line-height: 30px;
+    float: left;
+}
+.main-top .text2{
+	display: block;
+	width: 101px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #0070C9;
+    line-height: 30px;
+    float: left;
+}
+.main-top .text3{
+	width: 210px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #888888;
+    line-height: 30px;
+    float: left;
+}
+a{
+	text-decoration: none;
+}
+.main-top .text4{
+	display: block;
+	width: 101px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #0070C9;
+    line-height: 30px;
+    float: left;
+}
+.main-center{
+	width: 100%;
+	height: 30px;
+	/* background: red; */	
+}
+.main-center .text5{
+    width: 270px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #888;
+    line-height: 30px;
+    float: left;
+}
+.main-center .text6{
+	display: block;
+	width: 54px;
+	height: 30px;
+	font-size: 10px;
+	color: #555555;
+	line-height: 30px;
+	float: left;
+	border-right: 1px solid #f2f2f2;
+}
+.main-center .text6:last-child{
+	border: 0;
+}
+.main-center .text7{
+	display: block;
+	width: 54px;
+	height: 30px;
+	font-size: 10px;
+	color: #555555;
+	line-height: 30px;
+	float:right;
+}
+.main-bottom{
+    width: 100%;
+    height: 30px;
+   /*  background: pink; */
+    font-size: 10px;
+    color: #888888;
+    line-height: 30px;
+}
+
+
+}
+/* 768-1024 */
+@media screen and (min-width:768px) and (max-width:1024px){
+    .max-nav{
+		display: block;
+	}
+	.min-nav{
+		display: none;
+	}
+	nav ul{
+		padding: 0 30px;
+	}
+	.xiabian1{
+		display: block;
+	}
+	.xiabian2{
+		display: none;
+	}
+	.max-footer{
+		display: block;
+	}
+	.min-footer{
+		display: none;
+	}
+
+.zj-text a h1{
+	font-size: 33px;
+	color: #333;
+    text-align: center;
+    line-height: 53px;
+    margin-top: 100px;
+}
+.zj-text a h2{
+	font-size: 21px;
+	color: #333;
+    text-align: center;
+    line-height: 41px;   
+}
+.zj-text a div{
+	width: 704px;
+	height: 148px;
+	background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 145px;
+    background: url('../img/iphone_x_medium.jpg') no-repeat center center;
+}
+.zj-text1 a h1{
+	font-size: 34px;
+	color: #333;
+    text-align: center;
+    line-height: 53px;
+    margin-top: 78px;
+}
+.zj-text1 a h2{
+	font-size: 20px;
+	color: #333;
+    text-align: center;
+    line-height: 40px;   
+}
+.zj-text1 a div{
+	width: 549px;
+	height: 388px;
+	background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    background: url('../img/iphone_8_medium.jpg') no-repeat center center;
+}
+ /* 六个 */
+ .six-box li{
+	width: 50%;
+	height: 500px;
+	background: #fafafa;
+	float: left;
+	list-style: none;
+	border-bottom: 12px solid #fff;
+	border-right: 12px solid #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.six-box li:nth-child(2n+1){
+	border-left: 12px solid #fff;
+}
+.six-box li a{
+	text-decoration: none;
+}
+.six-box li h1{
+	font-size: 24px;
+	color: #333;
+    line-height: 36px;
+	margin-top: 48px;
+	text-align: center;	
+}
+.six-box li h2{
+	font-size: 16px;
+	color: #333;
+	line-height: 28px;
+	text-align: center;	
+}
+.six-box li div{
+	width: 269px;
+	height: 212px;
+	background: red;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+    position: absolute;
+    bottom: 88px;
+    background: url('../img/airpods_medium.jpg') no-repeat center center;
+}
+/* 下边 */
+.xiabian1{
+	width: 100%;
+	height: auto;
+    background: #fafafa;
+    float: left;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+}
+.list{
+	/* width: 976px; */
+	height: 300px;
+	/* background: yellow; */
+    /* margin: 0 auto; */
+    border-top: 25px solid #fafafa;
+
+}
+.list li{
+	width: 20%;
+	height: 300px;
+	/* background: pink; */
+	float: left;
+	list-style: none;
+}
+.list li a{
+	text-decoration: none;
+}
+.list li h1{
+	width: 100%;
+	height: 30px;
+	font-size:10px;
+	font-weight: normal;
+	color: #785578; 
+	line-height: 30px;
+}
+.list li h1:first-child{
+	color: #333333;
+}
+/* 底 */
+.max-footer{
+	width: 100%;
+	height: auto;
+	background: #fafafa;
+	float: left;
+}
+.max-footer .main{
+	/* width: 976px; */
+	height: 120px;
+	/* background: red; */
+	margin: 0 auto;
+	/* border-top: 30px solid #fafafa; */
+	padding: 10px 12px;
+	box-sizing: border-box;
+	border-bottom: 30px solid #fafafa;
+}
+.main-top{
+	width: 100%;
+	height: 30px;
+	/* background: yellow; */
+	border-bottom: 1px solid #D6D6D6;
+}
+.main-top .text1{
+	width: 112px;
+	height: 30px;
+	/* background: blue; */
+	font-size: 10px;
+	color: #888;
+    line-height: 30px;
+    float: left;
+}
+.main-top .text2{
+	display: block;
+	width: 101px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #0070C9;
+    line-height: 30px;
+    float: left;
+}
+.main-top .text3{
+	width: 210px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #888;
+    line-height: 30px;
+    float: left;
+}
+a{
+	text-decoration: none;
+}
+.main-top .text4{
+	display: block;
+	width: 101px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #0070C9;
+    line-height: 30px;
+    float: left;
+}
+.main-center{
+	width: 100%;
+	height: 30px;
+	/* background: red; */	
+}
+.main-center .text5{
+    width: 270px;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #888;
+    line-height: 30px;
+    float: left;
+}
+.main-center .text6{
+	display: block;
+	width: 54px;
+	height: 30px;
+	font-size: 10px;
+	color: #555;
+	line-height: 30px;
+	float: left;
+	border-right: 1px solid #f2f2f2;
+}
+.main-center .text6:last-child{
+	border: 0;
+}
+.main-center .text7{
+	display: block;
+	width: 54px;
+	height: 30px;
+	font-size: 10px;
+	color: #555;
+	line-height: 30px;
+	float:right;
+}
+.main-bottom{
+    width: 100%;
+    height: 30px;
+   /*  background: pink; */
+    font-size: 10px;
+    color: #888;
+    line-height: 30px;
+}
+
+
+}
+
+/* 小于768 */
+@media screen and (max-width:768px){
+	.max-nav{
+		display: none;
+	}
+	.min-nav{
+		display: block;
+	}
+	nav ul{
+		padding: 0 30px;
+	}
+	.xiabian1{
+		display: none;
+	}
+	.xiabian2{
+		display: block;
+	}
+	.max-footer{
+		display: none;
+	}
+	.min-footer{
+		display: block;
+	}
+
+.zj-text a h1{
+	font-size: 24px;
+	color: #333;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 45px;
+}
+.zj-text a h2{
+	font-size: 16px;
+	color: #333;
+    text-align: center;
+    line-height: 32px;   
+}
+.zj-text a div{
+	width: 167px;
+	height: 333px;
+	background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 35px;
+    background: url('../img/iphone_x_small.jpg') no-repeat center center;
+}
+.zj-text1 a h1{
+	font-size: 25px;
+	color: #333;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 44px;
+}
+.zj-text1 a h2{
+	font-size: 17px;
+	color: #333;
+    text-align: center;
+    line-height: 32px;   
+}
+.zj-text1 a div{
+	width: 267px;
+	height: 357px;
+	background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    background: url('../img/iphone_8_small.jpg') no-repeat center center;
+}
+/* 六个 */
+.six-box li{
+	width: 100%;
+	height: 500px;
+	background: #fafafa;
+	float: left;
+	list-style: none;
+	border-bottom: 12px solid #fff;
+	/* padding-right: 12px;
+    box-sizing: border-box; */
+    overflow: hidden;
+    position: relative;
+}
+/* .six-box li:nth-child(2n+1){
+	padding-left: 12px;
+} */
+.six-box li a{
+	text-decoration: none;
+}
+.six-box li h1{
+	font-size: 24px;
+	color: #333;
+    line-height: 36px;
+	margin-top: 42px;
+	text-align: center;	
+}
+.six-box li h2{
+	font-size: 16px;
+	color: #333;
+	line-height: 28px;
+	text-align: center;	
+}
+.six-box li div{
+	width: 244px;
+	height: 193px;
+	background: red;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+    position: absolute;
+    bottom: 100px;
+    background: url('../img/airpods_small.jpg') no-repeat center center;
+}
+
+
+.xiabian2{
+	width: 100%;
+	height: auto;
+    background: #fafafa;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.xiabian2 li{
+    width: 100%;
+   /*  height: 30px; */
+    
+    line-height: 30px;
+    border-bottom: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+.xiabian2 li a{
+	font-size: 10px;
+    color: #333;
+	text-decoration: none;
+}
+.min-footer{
+	width: 100%;
+	height:160px;
+	background: #fafafa;
+	float: left;
+	padding: 0 12px;
+	box-sizing: border-box;
+}
+.min-footer .main-top1{
+	width: 100%;
+	height: 50px;
+	/* background: yellow; */
+}
+.min-footer .main-top1 .text1{
+	width: 112px;
+	height: 50px;
+	/* background: blue; */
+	font-size: 10px;
+	color: #888;
+    line-height: 50px;
+    float: left;
+}
+.min-footer .main-top1 .text2{
+	display: block;
+	width: 101px;
+	height: 50px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #0070C9;
+    line-height: 50px;
+    float: left;
+}
+.min-footer .main-top1 .text3{
+	width: 210px;
+	height: 50px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #888;
+    line-height: 50px;
+    float: left;
+}
+.min-footer .main-top1 .text4{
+	display: block;
+	width: 101px;
+	height: 50px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #0070C9;
+    line-height: 50px;
+    float: left;
+}
+.min-footer .text8{
+	display: block;
+	width: 100%;
+	height: 20px;
+	font-size: 10px;
+	color: #555;
+	float: left;
+}
+.min-footer .text5{
+    width: 100%;
+	height: 30px;
+	/* background: pink; */
+	font-size: 10px;
+	color: #888;
+    line-height: 30px;
+    float: left;
+}
+.min-footer .text6{
+	display: block;
+	width: 54px;
+	height: 20px;
+	font-size: 10px;
+	color: #555;
+	line-height: 20px;
+	float: left;
+	border-right: 1px solid #f2f2f2;
+}
+.min-footer .text6:last-child{
+	border: 0;
+}
+.main-bottom1{
+    width: 100%;
+    height: 25px;
+   /*  background: pink; */
+    font-size: 10px;
+    color: #888;
+    line-height: 25px;
+    float: left;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
